@@ -13,7 +13,7 @@
         <record id="acquirer_form_systempaymulti" model="ir.ui.view">
             <field name="name">acquirer.form.systempaymulti</field>
             <field name="model">payment.acquirer</field>
-            <field name="inherit_id" ref="payment_acquirer_form" />
+            <field name="inherit_id" ref="acquirer_form_systempay" />
             <field name="arch" type="xml">
                 <xpath expr="//group[@name='systempay_gateway_access']" position="before">
                     <field name="systempay_multi_warning" invisible="1"/>
